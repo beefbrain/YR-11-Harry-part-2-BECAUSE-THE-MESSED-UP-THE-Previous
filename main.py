@@ -6,4 +6,4 @@ print ("Harry potter is a book series written by auther JK Rowlings.She wrote a 
 print("   ")
 print ("          .。･:*:･(✿ ◕ 3 ◕ ) ❤ ( ◕ ε ◕ ✿ )･:*:･。.")
 print("   ")
-print ("You'll be instructed to press a number that equals your option, at the end of the quiz, you will find out who your hogwarts best friend is!")
+print ("You'll be instructed to press a number that equals your option, at the end of the quiz, you will find out who your hogwarts best friend or people in your freind group are!")
