@@ -12,12 +12,15 @@ print ("Enter 1")
 print ("Someone a bit quiet and down to earth, they are very relaxing to hang out with")
 print ("Enter 2")
 #what id id to make this work was made my while and if statememnt more specific and added the input in the loop which i didn't do before.
-ans = int(input("Enter your option here..."))
+ans = int(input("Enter your option here: "))
+
 while ans > 2:
-  print("That is not an option, try again")
-  ans = int(input("Enter your option here..."))
-  if ans <=2:
-   break
+    print("That is not an option, try again")
+    ans = int(input("Enter your option here..."))
+    if ans <=2:
+     break
+
+print("   ")
   
 bad_boy_girl = {"Harry Potter", "Draco Malfoy", "Ginny Weasley"} 
 gd_influ = {"Hermioni Granger", "Neville Longbottom", "Ginny Weasley"} 
@@ -42,10 +45,17 @@ for character in ans_set:
 
 
 
+
+ #This is where i do the same thing for the rest of the questions
+
+
+
+
+
+  
   
 
 #printing wish chacaters have the most points (could be sigle character, could be multiple)
-
 
 
 
@@ -87,9 +97,11 @@ while i < len(sort_char_score) - 2:
 for j in range(i+1):
   first_key = list(sort_char_score)[j] 
 #i am only printing the keys
-  print (first_key [0])
+  print (",",  end = ' ')
+  print (first_key [0],  end = '')
+  
 
 if i == 0:
   print("is your hogwarts best friend, you guys have so much in common!")
 else:
-  print("are the people in you friend group at Hogwarts, you all have so much in common!")
+  print(" and you would make a wonderful friend group at Hogwarts, you all have so much in common!")
