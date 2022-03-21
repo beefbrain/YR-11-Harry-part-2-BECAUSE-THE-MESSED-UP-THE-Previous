@@ -55,7 +55,7 @@ for character in ans_set:
 
 sort_char_score = sorted(char_score.items(), key=lambda x: x[1], reverse=True)
 
-print (sort_char_score)
+#print (sort_char_score)
 #this is to see if the format worked
 
 #i need to see if there are any ties and if there are i need to print them. 
@@ -63,12 +63,13 @@ print (sort_char_score)
 #for this i will use a while loop only going the length of the set and see now many of the values after the first is equal to the first
 
 i = 0
-# i will be the amount of ties
+#the value of i will increase by one every loop thus will check the first key would become the next key and the next key would become the key after next key
+# i will be the amount of ties, the value of i chanches 
 while i < len(sort_char_score) - 2:
   first_key = list(sort_char_score)[i] 
   next_key = list(sort_char_score)[i+1]
-  print (first_key)
-  print (next_key)
+  #print (first_key)
+  #print (next_key)
   #^this goes on until there are no ties, if there are no ties, the loop     will be broken
   if first_key[1] == next_key[1]:
     i +=1
@@ -78,7 +79,7 @@ while i < len(sort_char_score) - 2:
   
     
 #I print the results here
-print (i)
+#print (i)
 #I need to print the key of the sorted dictionary up to 'i' place holder 
 # i will be using a for loop for this
 
@@ -86,4 +87,5 @@ print (i)
 for j in range(i+1):
   first_key = list(sort_char_score)[j] 
 #i am only printing the keys
+  print ("your Hogwarts friend group has :")
   print (first_key [0])
