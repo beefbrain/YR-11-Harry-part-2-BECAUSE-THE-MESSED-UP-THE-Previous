@@ -67,12 +67,18 @@ i = 0
 while i < len(sort_char_score) - 2:
   first_key = list(sort_char_score)[i] 
   next_key = list(sort_char_score)[i+1]
+  print (first_key)
+  print (next_key)
   #^this goes on until there are no ties, if there are no ties, the loop     will be broken
-  if first_key > next_key:
+  if first_key[1] == next_key[1]:
+    i +=1
+    
+  else:
     break
-  i +=1
+  
+    
 #I print the results here
-
+print (i)
 #I need to print the key of the sorted dictionary up to 'i' place holder 
 # i will be using a for loop for this
 
