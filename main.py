@@ -87,5 +87,9 @@ while i < len(sort_char_score) - 2:
 for j in range(i+1):
   first_key = list(sort_char_score)[j] 
 #i am only printing the keys
-  print ("your Hogwarts friend group has :")
   print (first_key [0])
+
+if i == 0:
+  print("is your hogwarts best friend, you guys have so much in common!")
+else:
+  print("are the people in you friend group at Hogwarts, you all have so much in common!")
