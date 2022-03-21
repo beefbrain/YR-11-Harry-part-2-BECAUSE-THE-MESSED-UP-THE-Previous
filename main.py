@@ -12,14 +12,13 @@ print ("Enter 1")
 print ("Someone a bit quiet and down to earth, they are very relaxing to hang out with")
 print ("Enter 2")
 ans = int(input("Enter your option here..."))
-while ans < 2:
-  if True:
+while ans > 2:
+  if ans > 2:
     print("That is not an option, try again")
+    ans = int(input("Enter your option here..."))
   else:
-    break
-    
-
-
+   break
+  
 bad_boy_girl = {"Harry Potter", "Draco Malfoy", "Ginny Weasley"} 
 gd_influ = {"Hermioni Granger", "Neville Longbottom", "Ginny Weasley"} 
 quiet = {"Neville Longbottom", "Luna Lovegood", "Cedric Diggory"} 
