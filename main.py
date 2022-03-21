@@ -64,19 +64,20 @@ print (sort_char_score)
 
 i = 0
 # i will be the amount of ties
-while i < len(sort_char_score):
+while i < len(sort_char_score) - 2:
   first_key = list(sort_char_score)[i] 
   next_key = list(sort_char_score)[i+1]
-#^this goes on until there are no ties, if there are no ties, the loop will be broken
-  if first_key == next_key
+  #^this goes on until there are no ties, if there are no ties, the loop     will be broken
+  if first_key > next_key:
     break
-
+  i +=1
 #I print the results here
 
 #I need to print the key of the sorted dictionary up to 'i' place holder 
 # i will be using a for loop for this
 
-for j range(i)
-first_key = list(sort_char_score)[j]
+
+for j in range(i+1):
+  first_key = list(sort_char_score)[j] 
 #i am only printing the keys
-print (firt key [0])
+  print (first_key [0])
