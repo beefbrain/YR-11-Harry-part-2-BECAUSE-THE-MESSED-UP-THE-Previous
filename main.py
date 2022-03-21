@@ -35,8 +35,48 @@ elif ans == 2:
 
 for character in ans_set:
 #character holds the values in ans_set
-  #print(character)
-#i am printing to test if characters holds the correct values
+
   char_score[character] +=1
-print (char_score)
+#print (char_score)
 #printing to test if the vaules are added up correctly 
+
+
+
+  
+
+#printing wish chacaters have the most points (could be sigle character, could be multiple)
+
+
+
+
+  
+
+#I need to order the dictionary from largest to smallest and i found a format for that.
+
+sort_char_score = sorted(char_score.items(), key=lambda x: x[1], reverse=True)
+
+print (sort_char_score)
+#this is to see if the format worked
+
+#i need to see if there are any ties and if there are i need to print them. 
+
+#for this i will use a while loop only going the length of the set and see now many of the values after the first is equal to the first
+
+i = 0
+# i will be the amount of ties
+while i < len(sort_char_score)
+  first_key = list(sort_char_score)[i] 
+  next_key = list(sort_char_score)[i+1]
+#^this goes on until there are no ties, if there are no ties, the loop will be broken
+  if first_key == next_key
+    break
+
+#I print the results here
+
+#I need to print the key of the sorted dictionary up to 'i' place holder 
+# i will be using a for loop for this
+
+for j range(i)
+first_key = list(sort_char_score)[j]
+#i am only printing the keys
+print (firt key [0])
