@@ -64,7 +64,7 @@ print (sort_char_score)
 
 i = 0
 # i will be the amount of ties
-while i < len(sort_char_score)
+while i < len(sort_char_score):
   first_key = list(sort_char_score)[i] 
   next_key = list(sort_char_score)[i+1]
 #^this goes on until there are no ties, if there are no ties, the loop will be broken
