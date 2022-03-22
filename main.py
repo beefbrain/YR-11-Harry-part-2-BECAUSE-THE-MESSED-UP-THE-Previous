@@ -1,10 +1,13 @@
 #intro
-name = input("what's your name? (press enter after writing your name) ")
-print("ʕ•́ᴥ•̀ʔっ♡ Hello {}".format(name)) 
+name = str(input("what's your name? (press enter after writing your name) "))
+
 if not name.isalpha():
       print("Please enter only alphabetical characters for your name.")
+      name = str(input("what's your name? (press enter after writing your name) "))
+
 
 elif name.isalpha():
+  print("ʕ•́ᴥ•̀ʔっ♡ Hello {}".format(name)) 
   print ("welcome to this harry potter quiz ʕ•́ᴥ•̀ʔっ♡ ")
   print ("Harry potter is a book series written by auther JK Rowlings.She wrote a total of 7 books but this quiz is based on 6 of them")
   print("   ")
