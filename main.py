@@ -17,8 +17,8 @@ brave= {"Harry Potter", "Cedric Diggory"}
 
 #Pick another 
 courageous = {"Ron Weasley", "Neville Longbottom"}
-intelligence = { "Hermioni Granger", "Draco Malfoy Cedric Diggory", "Ginny Weasley". 
-positivity = { "Luna Lovegood", "Fred and George Weasley"}
+intelligence = { "Hermioni Granger", "Draco Malfoy Cedric Diggory", "Ginny Weasley"} 
+positivity = {"Luna Lovegood", "Fred and George Weasley"}
 
 #matching opperation will be applied for thsi question here
 
@@ -48,7 +48,7 @@ art = {"Luna Lovegood"}
 Reading = {"Hermioni Granger"}
 Cooking = {"Neville Longbottom"}
 Gardening = {"Neville Longbottom", "Luna Lovegood"}
-joke_memes {"Fred and George Weasley"}
+joke_memes = {"Fred and George Weasley"}
 
 #matching opperation will be applied for thsi question here
 
