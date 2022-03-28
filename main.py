@@ -12,7 +12,17 @@ print ("Enter 1")
 print ("Someone a bit quiet and down to earth, they are very relaxing to hang out with")
 print ("Enter 2")
 #what id id to make this work was made my while and if statememnt more specific and added the input in the loop which i didn't do before.
-ans = int(input("Enter your option here..."))
+
+ans = 0
+while True:
+  try:
+    ans = int(input("Enter your option here..."))
+    break
+  except ValueError:
+      print("Please input integer only...")  
+      continue
+
+  
 while ans > 2:
   print("That is not an option, try again")
   ans = int(input("Enter your option here..."))
