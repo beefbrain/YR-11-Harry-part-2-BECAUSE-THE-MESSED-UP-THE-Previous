@@ -16,21 +16,31 @@ print ("Enter 2")
 ans = 0
 while True:
   try:
+    print(" ")
     ans = int(input("Enter your option here..."))
+    print(" ")
     break
   except ValueError:
-      print("Please input integer only...")  
+      
+      print("Please input integer only...") 
+      print("****************************")
+    
       continue
 
   
 while ans > 2:
   print("That is not an option, try again")
+  print("********************************")
+  print(" ")
   while True:
     try:
       ans = int(input("Enter your option here..."))
+      print(" ")
       break
     except ValueError:
-        print("Please input integer only...")  
+        print("Please input integer only...") 
+        print("****************************")
+        print(" ")
         continue
   if ans <=2:
    break
