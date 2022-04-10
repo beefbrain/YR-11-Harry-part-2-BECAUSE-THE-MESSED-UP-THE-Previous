@@ -1,3 +1,23 @@
+def int_only():  
+  while True:
+    try:
+      print(" ")
+      ans1 = 0
+      ans1 = int(input("Enter your option here..."))
+      print(" ")
+      return ans1
+      break
+    except ValueError:   
+        print("Please input integer only...") 
+        print("****************************")     
+        continue
+# the keys in the the dictionary char_score is the same to the value of all of the sets. i need to use a for loop to link them as the for loop will check the dictionary keys one after the other.
+def update_dict(up_dict, cho_set):
+  for character in cho_set:
+    up_dict[character] +=1
+  return up_dict
+
+#printing to test if the vaules are added up correctly 
 #sets and dictionaries 
 
 #dictionary of all the characters all characters have the same value of 0 so i found a finction that is a short cut for this
@@ -12,23 +32,19 @@ print ("Enter 1")
 print ("Someone a bit quiet and down to earth, they are very relaxing to hang out with")
 print ("Enter 2")
 #what id id to make this work was made my while and if statememnt more specific and added the input in the loop which i didn't do before.
-ans = int(input("Enter your option here: "))
-non_num = 0
-while non_num == 0:
-  try:
-    int(ans)
-    non_num = 1
-  except ValueError:
-    print ("This is not a number")
-    non_num = 0
+
+ans = 0
+
+
+ans = int_only()
   
 while ans > 2:
-    print("That is not an option, try again")
-    ans = int(input("Enter your option here..."))
-    if ans <=2:
-     break
-
-print("   ")
+  print("That is not an option, try again")
+  print("********************************")
+  print(" ")
+  ans = int_only()
+  if ans <=2:
+   break
   
 bad_boy_girl = {"Harry Potter", "Draco Malfoy", "Ginny Weasley"} 
 gd_influ = {"Hermioni Granger", "Neville Longbottom", "Ginny Weasley"} 
@@ -42,12 +58,10 @@ elif ans == 1:
 elif ans == 2:
   ans_set = quiet
 
-# the keys in the the dictionary char_score is the same to the value of all of the sets. i need to use a for loop to link them as the for loop will check the dictionary keys one after the other.
 
-for character in ans_set:
-#character holds the values in ans_set
 
-  char_score[character] +=1
+char_score = update_dict(char_score, ans_set)
+
 #print (char_score)
 #printing to test if the vaules are added up correctly 
 
@@ -83,7 +97,7 @@ sort_char_score = sorted(char_score.items(), key=lambda x: x[1], reverse=True)
 i = 0
 #the value of i will increase by one every loop thus will check the first key would become the next key and the next key would become the key after next key
 # i will be the amount of ties, the value of i chanches 
-while i < len(sort_char_score) - 2:
+while i < len(sort_char_score):
   first_key = list(sort_char_score)[i] 
   next_key = list(sort_char_score)[i+1]
   #print (first_key)
@@ -102,7 +116,7 @@ while i < len(sort_char_score) - 2:
 # i will be using a for loop for this
 
 
-for j in range(i+1):
+for j in range(i):
   first_key = list(sort_char_score)[j] 
 #i am only printing the keys
   print (",",  end = ' ')
