@@ -60,9 +60,7 @@ elif ans == 2:
 
 # the keys in the the dictionary char_score is the same to the value of all of the sets. i need to use a for loop to link them as the for loop will check the dictionary keys one after the other.
 
-#char_score = up_dict
-update_dict(char_score, ans_set)
-print(up_dict)
+char_score = update_dict(char_score, ans_set)
 #for character in ans_set:
 
   #char_score[character] +=1
