@@ -89,4 +89,5 @@ sort_char_score = sorted(char_score.items(), key=lambda x: x[1], reverse=True)
 
 #print (sort_char_score)
 #i am only printing the key
-print(next(iter(sort_char_score[0])) + " is you rbest friend at hogwarts! you guys have so much in common!")
+print(list(sort_char_score)[0])
+print("is you r hogwarts best friend! you guys have somuch in common")
